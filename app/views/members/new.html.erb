@@ -1,0 +1,12 @@
+<h1> Članice </h1>
+<%= form_for :member, url: members_path do |f| %>
+  <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+  </p>
+
+  <P>
+      <%= f.submit %>
+  </p>
+
+  <% end %>

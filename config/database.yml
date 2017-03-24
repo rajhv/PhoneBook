@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: vojkor
+  password: vojkor
+
+development:
+  <<: *default
+  database: phonebook_development
+test:
+  <<: *default
+  database: phonebook_test
